@@ -1,9 +1,5 @@
 /*
-  Question #2
-
-  (20 points) Using the program in the figure below, identify the values of pid
-at lines A, B, C, and D. (Assume that the actual pids of the parent and child
-are 2600 and 2603, respectively.)
+  Question: Identify the integer values at A, B, C and D
 */
 
 #include <stdio.h>

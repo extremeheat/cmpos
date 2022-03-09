@@ -1,7 +1,5 @@
 /*
-  Question #1
-
-  (15 points) Using the program shown below, explain what the output will be at LINE A. (Please enter the answer to this question in your solution to question 3 as a comment)
+  Question: Explain the output at line A
 */
 
 #include <stdio.h>

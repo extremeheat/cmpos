@@ -1,10 +1,11 @@
 /*
-  Question #3
-
-  (65 points) The Collatz conjecture concerns what happens when we take any positive integer n and apply the following algorithm:
-    n= {n/2, if n is even   and 3*n+1, if n is odd 
-  The conjecture states that when this algorithm is continually applied, all positive integers will eventually reach 1. For example, if n = 35, the sequence is
-  35, 106, 53, 160, 80, 40, 20, 10, 5, 16, 8, 4, 2, 1
+  Question: Implement the Collatz conjecture by reading an integer `n` and computing the rest of the numbers in a child process with fork(). 
+  And wait for the child.
+  
+  Algorithm (when this algorithm is continually applied, all positive integers will eventually reach 1):
+  f(n) = n/2 if n is even else 3*n+1 if n is odd
+  
+  For example, if n = 20, the sequence is: 20, 10, 5, 16, 8, 4, 2, 1
 */
 
 #include <stdio.h>
