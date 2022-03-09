@@ -15,15 +15,15 @@
 int main() {
   int num = -1;    // Variable holding initial n
   while (num <= 0) { // Keep asking until we get a valid number...
-    printf("Enter an Integer: ");  // prompting user for the integer
+    printf("Enter an integer: ");  // prompting user for the integer
     scanf("%d", &num);             // actually scanning for user input
   }
   
-  pid_t parentID = fork(); // parent ID
+  pid_t parentID = fork();      // parent ID
   
   if (parentID == 0) {
-    printf("%d\n", num);                // print initial value
-    while (num > 1) {                   // while num is larger than 1
+    printf("%d\n", num);        // print initial value
+    while (num > 1) {           // while num is larger than 1
       if (n % 2 == 0) {         // if num is even
         num /= 2;               // divide it by 2
       } else {                  // else
@@ -34,7 +34,7 @@ int main() {
   } else {
     // parent waits for child process to finish
     wait(NULL);
-    printf("Finish");
+    printf("Done\n");
   }
   return 0;
 }
