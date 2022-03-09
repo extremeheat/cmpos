@@ -15,16 +15,16 @@
 int main() {
   int num = -1;    // Variable holding initial n
   while (num <= 0) { // Keep asking until we get a valid number...
-    printf("Enter an integer: ");  // prompting user for the integer
-    scanf("%d", &num);             // actually scanning for user input
+    printf("Enter an integer: ");  // Prompting user for the integer
+    scanf("%d", &num);             // Read the input. The amperstand means to get the address pointer to "num", so the variable can be modified.
   }
   
   pid_t parentID = fork();      // parent ID
   
   if (parentID == 0) {
     printf("%d\n", num);        // print initial value
-    while (num > 1) {           // while num is larger than 1
-      if (n % 2 == 0) {         // if num is even
+    while (num > 1) {           // while num has not reached 1
+      if (num % 2 == 0) {       // if num is even
         num /= 2;               // divide it by 2
       } else {                  // else
         num = (3 * (num)) + 1;  // multiply it by 3, then add 1
